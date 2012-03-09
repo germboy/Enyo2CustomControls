@@ -1,0 +1,100 @@
+/* Copyright 2009-2011 Hewlett-Packard Development Company, L.P. All rights reserved. */
+.onyx-custom-progress-button {
+	min-height: 34px;
+	border-radius: 5px;
+	color: white;
+	background-color: rgba(23,23,23,0.5);
+	margin: 0px;
+	position:relative;
+	font-size: 18px;
+	line-height: 34px;
+}
+
+.onyx-custom-progress-button-inner {
+	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	
+	outline: 0;
+	/**/
+	color: #292929;
+	font-size: 16px;
+	text-align: center;
+	white-space: nowrap;
+	/**/
+	margin: 0;
+	overflow: hidden;
+	/**/
+	border-radius: 3px;
+	/* for IE8 */
+	border: 1px solid #777;
+	border: 1px solid rgba(15, 15, 15, 0.2);
+	/*
+		The border and the gradient interact in a strange way that
+		causes the bottom-border (top if the gradient is aligned top)
+		to be lighter than other borders.
+		We can fix it by using the darker bottom border below, but
+		then there are a few rogue pixels that end up very dark.
+	*/
+	/* border-bottom: 1px solid rgba(15, 15, 15, 0.5); */
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2);
+	/*
+		box-shadow: 0px 1px 0px rgba(164,164,164,0.1), inset 0px 1px 1px rgba(164,164,164,0.35);
+		text-shadow: 0 -1px 1px rgba(0,0,0,0.2);
+	 	background-color: #E1E1E1;
+	*/
+	/**/
+	background: #E1E1E1 url(../../images/gradient.png) repeat-x bottom;
+	/**/
+	text-overflow: ellipsis;
+	
+	background-color: #35A8EE; /* blue */
+	color: #F1F1F1;
+	
+}
+
+.onyx-custom-progress-button-client {
+	margin: 0 5px;
+	position:relative;
+}
+
+.onyx-custom-progress-button-cancel {
+	position:relative;
+	width:32px;
+	height:32px;
+	margin-right:2px;
+	margin-top:2px;
+	background-image: url(../../images/progress-button-cancel.png);
+}
+
+.onyx-custom-progress-button-cancel:active {
+	background-position: 0 -32px;
+}
+
+.onyx-custom-progress-button.affirmative > .onyx-custom-progress-button-inner {
+	color: white;
+	background-color: #2aa100;
+}
+
+.onyx-custom-progress-button.negative > .onyx-custom-progress-button-inner {
+	color: white;
+	background-color: #be0003;
+}
+
+.onyx-custom-progress-button.light > .onyx-custom-progress-button-inner {
+	background-color: rgba(255,255,255,0.8);
+	color: #292929;
+}
+
+.onyx-custom-progress-button.dark > .onyx-custom-progress-button-inner {
+	color: white;
+	background-color: rgba(23,23,23,0.5);
+}
+
+.onyx-custom-progress-button.blue > .onyx-custom-progress-button-inner {
+	color: white;
+	background-color: #2071bb;
+}
+
+

@@ -1,0 +1,41 @@
+.onyx-custom-textarea-decorator {
+	padding: 6px 8px 10px 8px;
+	border-radius: 3px;
+	border: 1px solid;
+	border-color: rgba(0,0,0,0.2);
+	margin: 0;
+}
+
+.onyx-custom-textarea-decorator.onyx-custom-focused {
+	box-shadow: inset 0px 1px 4px rgba(0,0,0,0.3);
+	border-color: rgba(0,0,0,0.4);
+	background-color: white;
+}
+
+.onyx-custom-textarea-decorator.onyx-custom-disabled {
+	/* FIXME: needed to color a disabled input placeholder. */
+	/*-webkit-text-fill-color: #888;*/
+	opacity: 0.3;
+}
+
+.onyx-custom-textarea-decorator > textarea {
+	/* reset */
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
+	font-size: 16px;
+	box-shadow: none;
+	/* FIXME: hack for styling reset on Android */
+	/* -webkit-appearance: caret;*/
+}
+
+.onyx-custom-textarea-decorator.onyx-custom-focused > textarea {
+	cursor: text;
+}
+
+.onyx-custom-textarea-decorator.onyx-custom-disabled > textarea {
+	cursor: default;
+}

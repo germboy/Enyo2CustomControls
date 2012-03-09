@@ -1,0 +1,32 @@
+/* Copyright 2009-2011 Hewlett-Packard Development Company, L.P. All rights reserved. */
+.onyx-custom-progress-bar {
+	height: 12px;
+	border-width: 0 5px;
+	position:relative;
+	
+	border: 1px solid #929292;
+	background: rgba(23,23,23,0.1) url(../../images/gradient.png) repeat-x 0 bottom;
+	border-radius: 3px;
+}
+
+.onyx-custom-progress-bar-inner {
+	
+	height: 10px;
+	border-width: 0 5px;
+	position: absolute;
+	z-index:10; /* for progressSlider altBarPosition */
+	
+	border-radius: 3px;
+	border: 1px solid #777;
+	border: 1px solid rgba(15, 15, 15, 0.2);
+	box-shadow: inset 0px 1px 0px rgba(255,255,255,0.2);
+	background-color: #35A8EE; /* blue */
+	color: #F1F1F1;
+
+}
+
+.onyx-custom-box {
+	margin: 0px 8px;
+	border: 0px solid #000;
+	line-height: 40px;
+}
