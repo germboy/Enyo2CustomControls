@@ -9,7 +9,7 @@ enyo.kind({
 			
 			// ProgressButton Control
 			{classes: "divider", content: "ProgressButton"},
-			{kind: "onyx-custom.ProgressButton", name: "progressButtonControl", position: 50, min: 0, style:"height:42px;", components: [
+			{kind: "onyx-custom.ProgressButton", name: "progressButtonControl", position: 50, min: 0, style:"height:42px;", onCancel:"reset", components: [
 				{kind: "FittableColumns", style:"height:100%;z-index:10;position:relative;", components: [
 					{content: "0", classes: "onyx-custom-box"},
 					{fit: true},
@@ -56,6 +56,9 @@ enyo.kind({
 		var p = this.$.progressButtonControl;
 		var i = p.minimum + ((p.position - p.minimum + 5) % (p.calcRange() + 1));
 		p.setPosition(i);
+	},
+	reset: function() {
+		this.$.progressButtonControl.setPosition(0);
 	}
 	
 });

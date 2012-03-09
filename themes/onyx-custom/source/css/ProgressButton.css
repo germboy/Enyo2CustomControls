@@ -62,9 +62,9 @@
 .onyx-custom-progress-button-cancel {
 	position:relative;
 	width:32px;
-	height:32px;
+	min-height:32px;
 	margin-right:2px;
-	margin-top:2px;
+	margin-top:5px;
 	background-image: url(../../images/progress-button-cancel.png);
 }
 
